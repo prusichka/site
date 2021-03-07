@@ -1,0 +1,2000 @@
+ 
+ * /* -Обнулення */ {
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  
+  *, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  :focus, :active {
+    outline: none; }
+  
+  a:focus, a:active {
+    outline: none; }
+  
+  nav, footer, header, aside {
+    display: block; }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  
+  input, button, textarea {
+    font-family: inherit; }
+  
+  input::-ms-clear {
+    display: none; }
+  
+  button {
+    cursor: pointer; }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  
+  a, a :visited {
+    text-decoration: none; }
+  
+  a:hover {
+    text-decoration: none; }
+  
+  ul li {
+    list-style: none; }
+  
+  img {
+    vertical-align: top; }
+/* ------------------------------------------------------------------------   */
+body{
+  background-color: #f1f1f1;
+}
+/* Основна сетка */
+.container{
+    max-width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    border: 1px solid #000;
+}
+
+@media (max-width : 1230px){
+    .container{
+        min-width: 940px;
+    }
+}
+@media (max-width : 992px){
+    .container{
+        min-width: 750px;
+    }
+}
+@media (max-width : 767px){
+    .container{
+        min-width: none;
+    }
+}
+/* Оболочка */
+.wrapper{
+    overflow: hidden;
+    min-height: 1700px ;
+}
+
+.main-menu{
+    position: absolute;
+    min-width: 100%;
+    height: 88px;
+    top: 0;
+    left: 0;  
+    display: flex;
+    flex-direction: column;
+}
+.menOne{
+    position: absolute;
+    min-width: 100%;
+    height: 35px;
+    left: 0;
+    top: -1px;
+    flex: 1 0 100%;
+    background: #243040;
+}
+.menTwo{
+    position: absolute;
+    min-width: 100%;
+    height: 45px;
+    left: 0px;
+    top: 34px;    
+    background: #243040;
+    flex: 1 0 100%;
+
+}
+.main-content{
+    position: absolute;
+    min-width: 700px;
+    min-height: 160px;
+    left: 70px;
+    top: 163px;
+   
+}
+ .content{
+    position: absolute;
+    min-width: 1200px;
+    height: 141px;
+    left:60px;
+    top: 0;
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+}
+.content__img{
+  padding-left: 25px;
+}
+
+.button{
+  position: absolute;
+  width: 187px;
+  height: 50px;
+  left: 160px;
+  top: 717px;
+  background: #0057FF;
+  border-radius: 10px;
+}
+.button-text{
+  position: absolute;
+  width: 91px;
+  height: 31px;
+  left: 0px;
+  top: 0px;
+  padding: 7px 45px;
+
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.005em;
+
+  color: #FFFFFF;
+
+}
+
+.text{
+    position: absolute;
+    min-width: 100%  ;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.BuySell{
+  position: absolute;
+  width: 500px;
+  max-height: 140px;
+  left: 160px;
+  top: 395px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 112.4%;
+  /* padding-left: 75px; */
+  letter-spacing: -0.005em;
+  color: #323136;
+}
+.join{
+  position: absolute;
+  width: 656px;
+  max-height: 123px;
+  margin: 0px  auto;
+  left: 160px;
+  top: 562px;
+  /* padding-left: 50px; */
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 24px;
+  line-height: 41px;
+  letter-spacing: 0.035em;
+
+  color: #323136;
+}
+
+.table{
+  position: absolute;
+  min-width: 474px;
+  height: 412px;
+  left: 886px;
+  top: 395px;
+  background: #FFFFFF;
+  
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+  .table-button{
+    position: absolute;
+    width: 430px;
+    height: 50px;
+    left: 20px;
+    bottom: 24px;
+    
+    background: #0056FE;
+    border-radius: 10px;
+  }
+  .table-button-text{
+  position: absolute;
+  width: 88px;
+  height: 26px;
+  left: 170px;
+  top: 10px;
+
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  letter-spacing: -0.005em;
+
+  color: #FFFFFF;
+  }
+.table2{
+  position: absolute;
+  width: 1200px;
+  height: 592px;
+  left: 160px;
+  top: 891px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.RectangleOne{
+  position: absolute;
+  width: 430px;
+  height: 70px;
+  left: 20px;
+  top: 30px;
+
+  background: #FFFFFF;
+  border: 2px solid #F0F1F3;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.RectangleTwo{
+  position: absolute;
+  width: 165.61px;
+  height: 69px;
+  left: 263px;
+  top: -1px;
+
+  background: #FFFFFF;
+  border: 2px solid #F0F1F3;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.Rectangle3{
+  position: absolute;
+  width: 430px;
+  height: 70px;
+  left: 20px;
+  top: 210px;
+
+  background: #FFFFFF;
+  border: 2px solid #F0F1F3;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.Rectangle4{
+  position: absolute;
+  width: 165.61px;
+  height: 70px;
+  left: 263px;
+  top: -1px;
+
+  background: #FFFFFF;
+  border: 2px solid #F0F1F3;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.Rectangle-text{
+  position: absolute;
+  width: 54px;
+  height: 23px;
+  left: 25px;
+  top: 23px;
+
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+
+  color: #323136;
+}
+
+.Rectangle-img{
+  position: absolute;
+  width: 23.94px;
+  height: 24px;
+  left: 15px;
+  top: 20px;
+}
+
+.RectangleTwo-text{
+  position: absolute;
+  width: 36px;
+  height: 23px;
+  left: 55px;
+  top: 20px;
+
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+
+  color: #2375F4;
+}
+.RectangleTwo-text2{
+  position: absolute;
+  left: 78.76%;
+  right: 40.46%;
+  top: 65.42%;
+  bottom: 88.2%;
+  background: #2D72FC;
+  transform: rotate(-90deg);
+}
+.Rectangle-img{
+  position: absolute;
+  width: 23.94px;
+  height: 24px;
+  left: 15px;
+  top: 20px;
+}
+.Rectangle4-text{
+  position: absolute;
+  width: 54px;
+  height: 23px;
+  left: 25px;
+  top: 23px;
+
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+
+  color: #323136;
+}
+.TotalCard{
+  position: absolute;
+  width: 200px;
+  height: 18px;
+  left: 90px;
+  top: 120px;
+
+  /* menu */
+
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+
+  /* базовый чёрный */
+
+  color: #323136;
+}
+.ConvRate{
+  position: absolute;
+  width: 210px;
+  height: 18px;
+  left: 90px;
+  top: 165px;
+  
+  /* menu */
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+  
+  /* базовый чёрный */
+  
+  color: #323136;
+}
+
+.name{
+  position: absolute;
+  width: 49px;
+  height: 23px;
+  left: 43px;
+  top: 32px;
+
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+
+  color: #7D7A7A;
+}
+.inf{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 442px;
+  height: 23px;
+  left: 487px;
+  top: 32px;
+
+}
+.inf_item3{
+  position: static;
+  width: 66px;
+  height: 23px;
+  left: 863px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #7D7A7A;
+  
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.inf_item2{
+  position: static;
+  width: 62px;
+  height: 23px;
+  left: 197px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #7D7A7A;
+  
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 117px;
+}
+.inf_item1{
+  position: static;
+  width: 80px;
+  height: 23px;
+  left: 0px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #7D7A7A;
+  
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.linee{
+  position: absolute;
+  width: 1200px;
+  height: 0px;
+  left: 0px;
+  top: 90.1px;
+
+  border: 1px solid #E1E1E3;
+  transform: rotate(-0.09deg);
+}
+.linee2{
+  position: absolute;
+  width: 1200px;
+  height: 0px;
+  left: 0px;
+  top: 183.2px;
+
+  border: 1px solid #E1E1E3;
+  transform: rotate(-0.09deg);
+}
+.linee3{
+  position: absolute;
+  width: 1200px;
+  height: 0px;
+  left: 0px;
+  top: 273.01px;
+
+  border: 1px solid #E1E1E3;
+  transform: rotate(-0.09deg);
+}
+.linee4{
+  position: absolute;
+  width: 1200px;
+  height: 0px;
+  left: 0px;
+  top: 363.01px;
+
+  border: 1px solid #E1E1E3;
+  transform: rotate(-0.09deg);
+}
+
+.linee5{
+  position: absolute;
+  width: 1200px;
+  height: 0px;
+  left: 0px;
+  top: 447.01px;
+
+  border: 1px solid #E1E1E3;
+  transform: rotate(-0.09deg);
+}
+.linee6{
+  position: absolute;
+  width: 1200px;
+  height: 0px;
+  left: 0px;
+  top: 539.01px;
+
+  border: 1px solid #E1E1E3;
+  transform: rotate(-0.09deg);
+}
+
+.icon{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 43px;
+  top: 116px;
+}
+.icon2{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 43px;
+  top: 205px;
+}
+.icon3{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 43px;
+  top: 294px;
+}
+.icon4{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 43px;
+  top: 381px;
+}
+.icon5{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 43px;
+  top: 474px;
+}
+.abr1{
+  position: absolute;
+  width: 34px;
+  height: 23px;
+  left: 107px;
+  top: 128px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #323136;
+}
+.abr2{
+  position: absolute;
+  width: 34px;
+  height: 23px;
+  left: 107px;
+  top: 217px;
+  
+  font-family: "IBM Plex Sans ";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #323136;
+}
+.abr3{
+  position: absolute;
+  width: 34px;
+  height: 23px;
+  left: 107px;
+  top: 306px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #323136;
+}
+.abr4{
+  position: absolute;
+  width: 34px;
+  height: 23px;
+  left: 107px;
+  top: 393px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #323136;
+}
+.abr5{
+  position: absolute;
+  width: 100px;
+  height: 23px;
+  left: 107px;
+  top: 474px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #323136;
+}
+.fullName{
+position: absolute;
+width: 81px;
+height: 23px;
+left: 169px;
+top: 128px;
+
+font-family: "IBM Plex Sans";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: -0.005em;
+
+color: #7D7A7A;
+}
+.fullName2{
+  position: absolute;
+  width: 81px;
+  height: 23px;
+  left: 169px;
+  top: 217px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #7D7A7A;
+  }
+  .fullName3{
+    position: absolute;
+    width: 81px;
+    height: 23px;
+    left: 169px;
+    top: 306px;
+    
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.005em;
+    
+    color: #7D7A7A;
+    }
+    .fullName4{
+      position: absolute;
+      width: 81px;
+      height: 23px;
+      left: 169px;
+      top: 393px;
+      
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: -0.005em;
+      
+      color: #7D7A7A;
+      }
+      .fullName5{
+        position: absolute;
+        width: 81px;
+        height: 23px;
+        left: 169px;
+        top: 474px;
+        
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.005em;
+        
+        color: #7D7A7A;
+        }
+.Lprise{
+  position: absolute;
+  width: 80px;
+  height: 21px;
+  left: 487px;
+  top: 128px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #000000;
+}
+.Lprise2{
+  position: absolute;
+  width: 80px;
+  height: 21px;
+  left: 487px;
+  top: 218px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #000000;
+}
+.Lprise3{
+  position: absolute;
+  width: 80px;
+  height: 21px;
+  left: 487px;
+  top: 307px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #000000;
+}
+.Lprise4{
+  position: absolute;
+  width: 80px;
+  height: 21px;
+  left: 487px;
+  top: 393px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #000000;
+}
+.Lprise5{
+  position: absolute;
+  width: 80px;
+  height: 21px;
+  left: 487px;
+  top: 474px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #000000;
+}
+.ho{
+
+  position: absolute;
+  width: 122px;
+  height: 18px;
+  left: 652px;
+  top: 62px;
+  
+}
+.ho-inf{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+  color: blue;
+  text-decoration: underline;
+}
+.ho-inf2{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 683px;
+  top: 62px;
+}
+.ho-inf3{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 712px;
+  top: 62px;
+}
+.ho-inf4{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 749px;
+  top: 62px;
+}
+.vidsotki{
+  position: absolute;
+  width: 54px;
+  height: 21px;
+  left: 685px;
+  top: 129px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #FF0000;
+}
+.vidsotki2{
+  position: absolute;
+  width: 54px;
+  height: 21px;
+  left: 685px;
+  top: 218px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #FF0000;
+}
+.vidsotki3{
+  position: absolute;
+  width: 54px;
+  height: 21px;
+  left: 685px;
+  top: 307px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #FF0000;
+}
+.vidsotki4{
+  position: absolute;
+  width: 54px;
+  height: 21px;
+  left: 685px;
+  top: 393px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #FF0000;
+}
+.vidsotki5{
+  position: absolute;
+  width: 54px;
+  height: 21px;
+  left: 685px;
+  top: 474px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #FF0000;
+}
+.trade{
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  left: 1108px;
+  top: 117px;
+
+  background: #0453FE;
+  border-radius: 10px;
+}
+.trade-text{
+  position: absolute;
+  width: 37px;
+  height: 18px;
+  left: 18px;
+  top: 5px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+  
+  color: #FFFFFF;
+  
+}
+.trade2{
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  left: 1108px;
+  top: 211px;
+
+  background: #0453FE;
+  border-radius: 10px;
+}
+.trade3{
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  left: 1108px;
+  top: 302px;
+
+  background: #0453FE;
+  border-radius: 10px;
+}
+.trade4{
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  left: 1108px;
+  top: 393px;
+
+  background: #0453FE;
+  border-radius: 10px;
+}
+.trade5{
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  left: 1108px;
+  top: 474px;
+
+  background: #0453FE;
+  border-radius: 10px;
+}
+
+.footer{
+  position: absolute;
+  min-width: 1200px;
+  height: 115px;
+  left: 160px;
+  top: 1543px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+.footer__content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px; 
+  position: absolute;
+  min-width: 940px;
+  height: 94px;
+  left: 151px;
+  top: 21px;
+}
+.one-text{
+  position: absolute;
+  width: 190px;
+  height: 23px;
+  left: 23px;
+  top: 48px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #565656;
+}
+.two-text{
+  position: absolute;
+  width: 190px;
+  height: 23px;
+  left: 401px;
+  top: 48px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #565656;
+}
+.three-text{
+  position: absolute;
+  width: 190px;
+  height: 23px;
+  left: 760px;
+  top: 48px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.005em;
+  
+  color: #565656;
+}
+.one-price{
+  position: absolute;
+  width: 208px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.005em;
+  
+  color: #0156FE;
+  
+}
+.two-price{
+  position: absolute;
+  width: 208px;
+  height: 36px;
+  left: 358px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.005em;
+  
+  color: #0156FE;
+  
+}
+.three-price{
+  position: absolute;
+  width: 208px;
+  height: 36px;
+  left: 732px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.005em;
+  
+  color: #0156FE;
+  
+}
+.menu-text-one{
+  position: absolute;
+  width: 48px;
+  height: 16px;
+  left: 0px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* text */
+  
+  color: #F8F8F8;
+}
+.menu-text-two{
+position: absolute;
+width: 75px;
+height: 16px;
+left: 55px;
+top: 9px;
+
+font-family: "IBM Plex Sans";
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: -0.005em;
+
+/* цвет линий */
+
+color: #C5C5C5;
+}
+.menu-icon{
+position: absolute;
+width: 10px;
+height: 10px;
+left: 134px;
+top: 11px;
+border-radius: 0.3px;
+}
+.menu-text-three{
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  left: 148px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #02C076;
+  letter-spacing: -0.005em;
+}
+.ETH-USD{
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  left: 219px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* text */
+  
+  color: #F8F8F8;
+}
+.menu-price-2{
+position: absolute;
+width: 75px;
+height: 16px;
+left: 274px;
+top: 9px;
+
+font-family: "IBM Plex Sans";
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: -0.005em;
+
+/* цвет линий */
+
+color: #C5C5C5;
+}
+.menu-icon-2{ 
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 362px;
+  top: 11px;
+  /* red */
+  border-radius: 0.3px;
+}
+.menu-procent-2{
+  position: absolute;
+  width: 48px;
+  height: 16px;
+  left: 377px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* red */
+  
+  color: #F84960;
+}
+.CEL-ETH{
+  position: absolute;
+  width: 49px;
+  height: 16px;
+  left: 438px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* text */
+  
+  color: #F8F8F8;
+}
+.menu-price-3{
+  position: absolute;
+  width: 75px;
+  height: 16px;
+  left: 493px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* цвет линий */
+  
+  color: #C5C5C5;
+}
+.menu-icon-3{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 572px;
+  top: 11px;
+  border-radius: 0.3px;
+}
+.menu-procent-3{
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  left: 586px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* green */
+  
+  color: #02C076;
+}
+.CEL-BTC{
+  position: absolute;
+  width: 48px;
+  height: 16px;
+  left: 658px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* text */
+  
+  color: #F8F8F8;
+}
+.menu-price-4{
+  position: absolute;
+  width: 75px;
+  height: 16px;
+  left: 713px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* цвет линий */
+  
+  color: #C5C5C5;
+}
+.menu-icon-4{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 802px;
+  top: 11px;
+  border-radius: 0.3px;
+}
+.menu-procent-4{
+  position: absolute;
+  width: 48px;
+  height: 16px;
+  left: 816px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* red */
+  
+  color: #F84960;
+}
+.CEL-BTC2{
+  position: absolute;
+  width: 48px;
+  height: 16px;
+  left: 877px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* text */
+  
+  color: #F8F8F8;
+}
+.menu-price-5{
+  position: absolute;
+  width: 75px;
+  height: 16px;
+  left: 932px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* цвет линий */
+  
+  color: #C5C5C5;
+}
+.menu-icon-5{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 1011px;
+  top: 11px;
+
+  border-radius: 0.3px;
+}
+.menu-procent-5{
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  left: 1025px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* green */
+  
+  color: #02C076;
+}
+.CEL-BTC3{
+  position: absolute;
+  width: 48px;
+  height: 16px;
+  left: 1095px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* text */
+  
+  color: #F8F8F8;
+}
+.menu-price-6{
+  position: absolute;
+  width: 75px;
+  height: 16px;
+  left: 1150px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* цвет линий */
+  
+  color: #C5C5C5;
+}
+.menu-icon-6{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 1229px;
+  top: 11px;
+  border-radius: 0.3px;
+}
+.menu-procent-6{
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  left: 1243px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* green */
+  
+  color: #02C076
+}
+.CEL-BTC4{
+  position: absolute;
+  width: 48px;
+  height: 16px;
+  left: 1314px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* text */
+  
+  color: #F8F8F8
+}
+.menu-price-7{
+  position: absolute;
+  width: 75px;
+  height: 16px;
+  left: 1370px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* цвет линий */
+  
+  color: #C5C5C5;
+}
+.menu-icon-7{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 1450px;
+  top: 11px;
+  border-radius: 0.3px;
+}
+.menu-procent-7{
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  left: 1465px;
+  top: 9px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  /* green */
+  
+  color: #02C076
+}
+.logo{
+  position: absolute;
+  width: 138px;
+  height: 52px;
+  left: 87px;
+  top: 0px;  
+}
+.menTwo-item1{
+  position: absolute;
+  width: 25px;
+  height: 0px;
+  left: 231.1px;
+  top: 20px;
+  border: 1px solid #FFFFFF;
+transform: rotate(90deg);
+}
+.cub{
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 252px;
+  top: 13px;  
+}
+.cub-item1{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 27px;
+  top: 0px;
+  background: #FFFFFF;
+}
+.cub-item2{
+  position: absolute;
+width: 5px;
+height: 5px;
+left: 34px;
+top: 0px;
+
+background: #FFFFFF;
+}
+.cub-item3{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 41px;
+  top: 0px;
+  
+  background: #FFFFFF;
+}
+.cub-item4{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 27px;
+  top: 7px;
+  background: #FFFFFF;
+}
+.cub-item5{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 34px;
+  top: 7px;
+  
+  background: #FFFFFF;
+}
+.cub-item6{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 41px;
+  top: 7px;
+  
+  background: #FFFFFF;
+}
+.cub-item7{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 27px;
+  top: 14px;
+  
+  background: #FFFFFF;
+}
+.cub-item8{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 34px;
+  top: 14px;
+  
+  background: #FFFFFF;
+}
+.cub-item9{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 41px;
+  top: 14px;
+  
+  background: #FFFFFF;
+}
+.menTwo-Trade{
+  position: absolute;
+  width: 36px;
+  height: 18px;
+  left: 75px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+  
+  color: #FFFFFF;
+}
+.polygon15{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 110.43px;
+  top: 5px;
+  border-radius: 0.3px;
+  
+}
+.menTwo-Markets{
+  position: absolute;
+  width: 51px;
+  height: 18px;
+  left: 134px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+  
+  color: #FFFFFF;
+}
+.menTwo-Finance{
+  position: absolute;
+  width: 49px;
+  height: 18px;
+  left: 198px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+  
+  color: #FFFFFF;
+}
+.menTwo-News{
+  position: absolute;
+  width: 35px;
+  height: 18px;
+  left: 261px;
+  top: 0px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.005em;
+  
+  color: #FFFFFF;
+  
+}
+.polygon16{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 298px;
+  top: 5px;
+  border-radius: 0.3px;
+}
+.LogIn{
+position: absolute;
+width: 70px;
+height: 25px;
+left: 1024px;
+top: 10px;
+
+border: 1px solid #0056FE;
+box-sizing: border-box;
+border-radius: 5px;
+}
+.logIn-text{
+  position: absolute;
+  width: 36px;
+  height: 17px;
+  left: 18px;
+  top: 4px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #FFFFFF;  
+}
+.RegisTer{
+  position: absolute;
+  width: 70px;
+  height: 25px;
+  left: 1112px;
+  top: 10px;
+  
+  background: #0056FE;
+  border-radius: 5px;
+}
+.RegisTer-text{
+  position: absolute;
+  width: 48px;
+  height: 17px;
+  left: 18px;
+  top: 4px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #FFFFFF;
+}
+.menTwo-items1{
+  position: absolute;
+  width: 14.41px;
+  height: 18.1px;
+  left: 303.59px;
+  top: 11px;
+}
+.doubleVector{
+  position: absolute;
+  width: 16.91px;
+  height: 18.07px;
+  left: 1236.24px;
+  top: 11px;
+}
+.doubleVector-one{
+  position: absolute;
+  width: 16.91px;
+  height: 10.05px;
+  right: 0px;
+  top: 0px;
+  
+}
+.doubleVector-two{
+  position: absolute;
+width: 14.59px;
+height: 15.22px;
+right: 2px;
+top: 1px;
+
+}
+.Vector4{
+  position: absolute;
+width: 20.06px;
+height: 18.38px;
+left: 1270.94px;
+top: 11.5px;
+}
+.Vector4-1{
+  position: absolute;
+width: 18.84px;
+height: 14.28px;
+right: 0px;
+top: 0px;
+}
+.Vector4-2{
+  position: absolute;
+  width: 4.53px;
+  height: 1.54px;
+  right: 10px;
+  top: 15px;
+}
+.Vector4-3{
+  position: absolute;
+  width: 4.2px;
+  height: 4.12px;
+  right: 2px;
+  top: 10px;
+}
+.Vector4-4{
+  position: absolute;
+  width: 11.96px;
+  height: 12.27px;
+  right: -2px;
+  top: 6px;
+}
+.leng{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 1382px;
+  top: 13px;
+  
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  letter-spacing: -0.005em;
+  
+  color: #FFFFFF;
+}
+.polygon17{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 1400px;
+  top: 18px;
+  border-radius: 0.3px;
+ 
+}
+.setting{
+  position: absolute;
+  left: 0;
+  right: 1420px;
+  top: 11px;
+  bottom: 0;
+ 
+}
